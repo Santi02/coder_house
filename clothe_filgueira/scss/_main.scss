@@ -6,6 +6,10 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+.contenedor{
+      max-width: 120rem;
+      margin: 0 auto;
+  }
 img.logo{
   display: block;
   width: 15%;
@@ -78,9 +82,6 @@ body {
         color: $oscuro;
         font-size: 1.6rem;
       }
-
-
-  
 }
 }
     @media (max-width: $mq) {
@@ -89,7 +90,6 @@ body {
     justify-content: space-between;
 }
 }
-
 .productos{
   background-color: $oscuro;
   @include mx1;
@@ -112,10 +112,14 @@ body {
 .producto{
     background-image: linear-gradient(to top, $rojo 0%, $azulOscuro 100%);
     padding: 1rem;
-      &:hover{
-        cursor: pointer;
-
-      }
+}
+.producto__a{
+  color: $oscuro;
+  text-decoration: none;
+    &:hover{
+    cursor: pointer;
+    color: $blanco;
+    }
 }
 .producto__nombre
 .producto__precio{
@@ -129,6 +133,71 @@ body {
   font-size: 70%;
   margin-top: 1rem;
 }
+
+.contenedor{
+  background-color: $grisClaro;
+}
+.h1Remera{
+      text-align:center;
+      color: azulOscuro;
+      padding: 3rem;
+      margin-bottom: 2rem;
+  }
+
+  .formularioProd {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.formulario__campo {
+    border: 1rem solid $azulOscuro; 
+    background-color: transparent;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    appearance: none;
+      &:hover{
+      cursor: pointer;
+      border: 1rem solid $rojo; 
+      }
+    }
+    .imgProd{
+    display: block;
+    margin: auto;
+    }
+.camisa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 8rem;
+}
+.descripcionRem{
+  margin: 2rem;
+}
+@media (max-width: $mq) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    }
+.formulario__submit {
+    background-color: $gris;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem;
+    transition: font-size .5s ;
+    grid-column: 1/ 3; 
+      &:hover {
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: $blanco;
+   }
+   }
+
 .cuenta{
   text-align: center;
   font-weight: 500;
