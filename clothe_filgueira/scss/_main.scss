@@ -150,6 +150,14 @@ body {
     gap: 2rem;
     margin-bottom: 5rem;
 }
+
+  .formularioProd1 {
+    display: block;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
 .formulario__campo {
     border: 1rem solid $azulOscuro; 
     background-color: transparent;
@@ -172,9 +180,11 @@ body {
     column-gap: 2rem;
     font-size: 2rem;
     text-align: center;
+    justify-content: center;
     padding-bottom: 8rem;
-
 }
+
+
 .descripcionRem{
   margin: 2rem;
 }
@@ -188,12 +198,29 @@ body {
         column-gap: 2rem;
     }
     }
-.formulario__submit {
+.formulario__submit1 {
+    background-color: $gris;
+    border: none;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    transition: font-size .5s ;
+   
+      &:hover {
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: $blanco;
+   }
+   }
+
+   .formulario__submit {
     background-color: $gris;
     border: none;
     font-size: 2rem;
     padding: 2rem;
     transition: font-size .5s ;
+    display: block;
+    align-items: center;
     grid-column: 1/ 3; 
       &:hover {
     font-size: 2.4rem;
@@ -464,9 +491,6 @@ margin: 3rem 0;
   text-align: center;
   padding: 4rem;
 }
-
-
-
 
 
 
