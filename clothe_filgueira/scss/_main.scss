@@ -21,11 +21,13 @@ img.logo{
   background-size: cover;
   position: relative;
     @media (max-width: $mq) {
+        .encabezado{
       background-size: cover;
       padding-bottom: 20rem;
       background-image: url(fondo1.jpg);
       background-size: cover;
       position: relative;
+}
 }
 }
 .header{
