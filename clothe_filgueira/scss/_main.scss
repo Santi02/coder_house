@@ -5,12 +5,13 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-}
+
+
 .contenedor{
       max-width: 120rem;
       margin: 0 auto;
   }
-img.logo{
+.logo{
   display: block;
   width: 15%;
 }
@@ -21,13 +22,11 @@ img.logo{
   background-size: cover;
   position: relative;
     @media (max-width: $mq) {
-        .encabezado{
       background-size: cover;
       padding-bottom: 20rem;
       background-image: url(fondo1.jpg);
       background-size: cover;
       position: relative;
-}
 }
 }
 .header{
@@ -36,11 +35,11 @@ img.logo{
   background-color: $azulOscuro;
   padding-top: 0.9rem;
     @media (max-width: $mq){
-      .header{
   display: flex;
   justify-content: center;
   background-color: $azulOscuro;
   padding-top: 0.9rem;
+  }
     img.logo__2{
     display: block;
     height: 40%;
@@ -48,29 +47,32 @@ img.logo{
     margin-right: auto;
   }
 }
-}
-}
+
+
 body {
   font-size: 30px;
  font-family: "Krub", sans-serif;
   /*1rem=10px*/
   background-image: linear-gradient(to top,$grisClaro 0%, $blanco 100%);
     .nav-bg {
-  background-color: $gris;
+    background-color: $gris;
     @media (max-width: $mq) {
-   .nav-bg {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 }
-}
-}
+
 .navegacion-principal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-left: 7rem;
   margin-right: 7rem;
+     @media (max-width: $mq) {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
     .indice{
   display: block;
   text-align: center;
@@ -86,16 +88,11 @@ body {
       }
 }
 }
-    @media (max-width: $mq) {
-  .navegacion-principal {
-    flex-direction: column;
-    justify-content: space-between;
-}
-}
+
 .productos{
   background-color: $oscuro;
   @include mx1;
-}
+
 .grid{
   display: grid ;
   text-align: center;
@@ -103,13 +100,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 8rem;
   margin: 4rem;
-
-}
-@media (max-width: $mq) {
-    .grid{
+    @media (max-width: $mq) {
         grid-template-columns: repeat(1, 1fr);
-
     }
+}
+
 }
 .producto{
     background-image: linear-gradient(to top, $rojo 0%, $azulOscuro 100%);
@@ -129,36 +124,54 @@ body {
     margin: 1rem 0;
     text-align: center;
     line-height: 1;
-    
-}
+}    
+
 .producto__info{
   font-size: 70%;
   margin-top: 1rem;
 }
+}
+
 
 .contenedor{
   background-color: $grisClaro;
-}
+
 .h1Remera{
       text-align:center;
       color: azulOscuro;
       padding: 3rem;
       margin-bottom: 2rem;
   }
+.imgProd{
+    display: block;
+    margin: auto;
+    }
+    
+  .camisa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 8rem;
+      @media (max-width: $mq) {
+        display: block;
+        justify-content: center;
+        column-gap: 2rem;
+    
+    }
+.descripcionRem{
+  margin: 2rem;
+}
+.precio{
+  margin: 4rem;
+}
 
   .formularioProd {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 5rem;
-}
-
-  .formularioProd1 {
-    display: block;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 5rem;
-}
 
 .formulario__campo {
     border: 1rem solid $azulOscuro; 
@@ -170,51 +183,11 @@ body {
       &:hover{
       cursor: pointer;
       border: 1rem solid $rojo; 
+
       }
     }
-    .imgProd{
-    display: block;
-    margin: auto;
-    }
-.camisa{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    padding-bottom: 8rem;
-}
-
-
-.descripcionRem{
-  margin: 2rem;
-}
-.precio{
-  margin: 4rem;
-}
-@media (max-width: $mq) {
-    .camisa{
-        display: block;
-        justify-content: center;
-        column-gap: 2rem;
-    }
-    }
-.formulario__submit1 {
-    background-color: $gris;
-    border: none;
-    font-size: 2rem;
-    padding: 2rem;
-    margin-top: 3rem;
-    transition: font-size .5s ;
-   
-      &:hover {
-    font-size: 2.4rem;
-    cursor: pointer;
-    color: $blanco;
-   }
-   }
-
-   .formulario__submit {
+    
+ .formulario__submit {
     background-color: $gris;
     border: none;
     font-size: 2rem;
@@ -227,9 +200,13 @@ body {
     font-size: 2.4rem;
     cursor: pointer;
     color: $blanco;
-   }
-   }
+    }
+    }
+    }
 
+   }
+   }
+}
 .cuenta{
   text-align: center;
   font-weight: 500;
@@ -286,10 +263,7 @@ body {
   margin-bottom: 4rem;
   border-radius: 1rem;
     @media (max-width: $mq) {
-    .formBT{
     width: 40rem;
-
-    }
     }
 }
 
@@ -298,22 +272,25 @@ body {
     grid-template-columns:repeat(2, auto); ;
     padding: 3rem;
     column-gap: 3rem;
-    /*paddin-bottom: 5rem;*/
     justify-content: center;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 5rem;
-    }
+    
       @media (max-width: $mq) {
-      .nosotros{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: min-content;
     column-gap: 2rem;
     text-align: center;
+}
 
 }
-}
 .texto-nosotros{
+  margin-left: 3rem;
   padding: 3rem;
+  margin-bottom: 1rem;
+    @media (max-width: $mq) {
+    margin-top: 9rem;
+}
 }
 
 .logo__2{
@@ -321,11 +298,34 @@ margin: 3rem 0;
 }
 .pq__nosotros{
   margin: 5rem;
-  font-size: 300%;
+  font-size: 100%;
   background-color: #FFDBDC;
   padding: 3rem;
   border-radius: 1.5rem;
 }
+
+
+.nosotros__end{
+  text-align:center;
+  font-family: "Krub", sans-serif;
+}
+.textoFinalNosotros{
+   display: grid;
+   grid-template-columns:  repeat(3, 1fr);
+   gap: 2rem;
+   justify-content: center;
+   text-align: center;
+   font-size: 80%;
+   margin: 5rem;
+   column-gap: 5rem;
+    @media (max-width: $mq) {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+    
+}
+
+
 .elPQ{
      -webkit-box-shadow: 0px 5px 15px 0px rgba(99, 99, 99, 0.54);
     -moz-box-shadow: 0px 5px 15px 0px rgba(99, 99, 99, 0.54);
@@ -340,33 +340,16 @@ margin: 3rem 0;
       font-size: 2.1rem;
 
       }
+.size--nosotros{
+  font-size: 80%;
+}      
+}
 }
 
-.nosotros__end{
-  text-align:center;
-  font-family: "Krub", sans-serif;
-}
-.textoFinalNosotros{
-   display: grid;
-   grid-template-columns:  repeat(3, 1fr);
-   gap: 2rem;
-   justify-content: center;
-   text-align: center;
-   font-size: 200%;
-   margin: 5rem;
-   column-gap: 5rem;
-}
 .pq__nosotros{
   color: $azulOscuro;
 }
 
-@media (max-width: $mq) {
-    .textoFinalNosotros{
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        text-align: center;
-    }
-}
 
 .carrousel{
   justify-content: center;
@@ -374,9 +357,7 @@ margin: 3rem 0;
  height: 160px; 
 }
 
-.size--nosotros{
-  font-size: 80%;
-}
+
 
 .mapa{
   display: flex;
@@ -415,14 +396,9 @@ margin: 3rem 0;
   margin-bottom: 4rem;
   /*padding: 2rem;*/
   border-radius: 1rem;
-  
-@media (max-width: $mq) {
-  .form{
-   box-sizing: border-box;
+    @media (max-width: $mq) {
+    box-sizing: border-box;
     justify-content: center;
-    
-    
-  }
 }
 }
 
@@ -492,24 +468,4 @@ margin: 3rem 0;
   text-align: center;
   padding: 4rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
