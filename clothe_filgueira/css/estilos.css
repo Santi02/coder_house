@@ -183,12 +183,12 @@ html body .producto__info {
 }
 
 /* line 136, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor {
+html body .contenedor {
   background-color: #dfe9f3;
 }
 
 /* line 139, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .h1Remera {
+html body .contenedor .h1Remera {
   text-align: center;
   color: azulOscuro;
   padding: 3rem;
@@ -196,13 +196,13 @@ html .contenedor .h1Remera {
 }
 
 /* line 145, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .imgProd {
+html body .contenedor .imgProd {
   display: block;
   margin: auto;
 }
 
 /* line 150, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa {
+html body .contenedor .camisa {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
@@ -213,7 +213,7 @@ html .contenedor .camisa {
 
 @media (max-width: 768px) {
   /* line 150, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  html .contenedor .camisa {
+  html body .contenedor .camisa {
     display: block;
     justify-content: center;
     column-gap: 2rem;
@@ -221,17 +221,17 @@ html .contenedor .camisa {
 }
 
 /* line 163, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa .descripcionRem {
+html body .contenedor .camisa .descripcionRem {
   margin: 2rem;
 }
 
 /* line 166, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa .precio {
+html body .contenedor .camisa .precio {
   margin: 4rem;
 }
 
 /* line 170, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa .formularioProd {
+html body .contenedor .camisa .formularioProd {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -240,7 +240,7 @@ html .contenedor .camisa .formularioProd {
 
 @media (max-width: 768px) {
   /* line 170, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  html .contenedor .camisa .formularioProd {
+  html body .contenedor .camisa .formularioProd {
     display: block;
     text-align: center;
     column-gap: 3rem;
@@ -248,7 +248,8 @@ html .contenedor .camisa .formularioProd {
 }
 
 /* line 181, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa .formularioProd .formulario__campo {
+html body .contenedor .camisa .formularioProd .formulario__campo {
+  margin: inherit;
   border: 1rem solid #02255B;
   background-color: transparent;
   color: black;
@@ -257,14 +258,14 @@ html .contenedor .camisa .formularioProd .formulario__campo {
   appearance: none;
 }
 
-/* line 188, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa .formularioProd .formulario__campo:hover {
+/* line 190, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .contenedor .camisa .formularioProd .formulario__campo:hover {
   cursor: pointer;
   border: 1rem solid #BD0519;
 }
 
-/* line 195, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa .formularioProd .formulario__submit {
+/* line 196, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .contenedor .camisa .formularioProd .formulario__submit {
   background-color: #757575;
   border: none;
   font-size: 2rem;
@@ -276,29 +277,22 @@ html .contenedor .camisa .formularioProd .formulario__submit {
 }
 
 @media (max-width: 768px) {
-  /* line 195, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  html .contenedor .camisa .formularioProd .formulario__submit {
+  /* line 196, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+  html body .contenedor .camisa .formularioProd .formulario__submit {
     display: initial;
     margin-top: 3rem;
   }
 }
 
-/* line 208, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-html .contenedor .camisa .formularioProd .formulario__submit:hover {
+/* line 209, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .contenedor .camisa .formularioProd .formulario__submit:hover {
   font-size: 2.4rem;
   cursor: pointer;
   color: #ffffff;
 }
 
-/* line 219, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.cuenta {
-  text-align: center;
-  font-weight: 500;
-  font-size: 50%;
-}
-
-/* line 224, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.creaCuenta {
+/* line 221, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .creaCuenta {
   background-color: #FFDCDC;
   justify-content: center;
   text-align: center;
@@ -306,60 +300,15 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
   margin-bottom: 2rem;
 }
 
-/* line 231, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form-control {
-  width: 90%;
-  border: none;
+/* line 227, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .creaCuenta .cuenta {
+  text-align: center;
+  font-weight: 500;
   font-size: 50%;
-  margin-left: 1rem;
 }
 
-/* line 237, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form-label {
-  font-size: 1.5rem;
-  margin-left: 2rem;
-}
-
-/* line 241, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form-text {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 0.5rem;
-}
-
-/* line 246, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form-check-label {
-  font-size: 1.5rem;
-  margin: 1rem;
-}
-
-/* line 250, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form-check-input[type=checkbox] {
-  margin-left: 1rem;
-}
-
-/* line 253, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form-check-input {
-  padding-left: 0.5rem;
-}
-
-/* line 256, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form-check {
-  padding-left: 1rem;
-}
-
-/* line 259, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.btn {
-  margin: 2rem;
-  text-decoration: none;
-  text-align: center;
-  font-size: 40%;
-  border: none;
-  padding: 0.8rem;
-}
-
-/* line 267, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.formBT {
+/* line 236, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT {
   background-color: #C5E4FF;
   width: 45rem;
   margin: 0 auto;
@@ -369,14 +318,67 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
 }
 
 @media (max-width: 768px) {
-  /* line 267, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  .formBT {
+  /* line 236, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+  html body .formBT {
     width: 40rem;
   }
 }
 
-/* line 279, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.nosotros {
+/* line 246, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT .form-label {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+/* line 250, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT .form-control {
+  margin-left: 1rem;
+  width: 95%;
+  border: none;
+  font-size: 50%;
+  margin-left: 1rem;
+}
+
+/* line 257, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT .form-text {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* line 263, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT .form-check {
+  padding-left: 1rem;
+}
+
+/* line 266, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT .form-check-input {
+  padding-left: 0.5rem;
+}
+
+/* line 269, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT .form-check-input[type=checkbox] {
+  margin-left: 1rem;
+}
+
+/* line 272, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formBT .form-check-label {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+/* line 278, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .btn {
+  margin: 2rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40%;
+  border: none;
+  padding: 0.8rem;
+}
+
+/* line 287, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .nosotros {
   display: grid;
   grid-template-columns: repeat(2, auto);
   padding: 3rem;
@@ -388,35 +390,35 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
 }
 
 @media (max-width: 768px) {
-  /* line 279, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  .nosotros {
+  /* line 287, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+  html body .nosotros {
     grid-template-columns: min-content;
     column-gap: 2rem;
     text-align: center;
   }
 }
 
-/* line 296, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.texto-nosotros {
+/* line 304, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .texto-nosotros {
   margin-left: 3rem;
   padding: 3rem;
   margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-  /* line 296, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  .texto-nosotros {
+  /* line 304, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+  html body .texto-nosotros {
     margin-top: 9rem;
   }
 }
 
-/* line 305, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.logo__2 {
+/* line 313, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .logo__2 {
   margin: 3rem 0;
 }
 
-/* line 308, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.pq__nosotros {
+/* line 316, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .pq__nosotros {
   margin: 5rem;
   font-size: 100%;
   background-color: #FFDBDC;
@@ -424,14 +426,14 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
   border-radius: 1.5rem;
 }
 
-/* line 317, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.nosotros__end {
+/* line 325, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .nosotros__end {
   text-align: center;
   font-family: "Krub", sans-serif;
 }
 
-/* line 321, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.textoFinalNosotros {
+/* line 329, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .textoFinalNosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -443,16 +445,16 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
 }
 
 @media (max-width: 768px) {
-  /* line 321, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  .textoFinalNosotros {
+  /* line 329, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+  html body .textoFinalNosotros {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     text-align: center;
   }
 }
 
-/* line 338, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.textoFinalNosotros .elPQ {
+/* line 345, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .textoFinalNosotros .elPQ {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(99, 99, 99, 0.54);
   -moz-box-shadow: 0px 5px 15px 0px rgba(99, 99, 99, 0.54);
   box-shadow: 0px 5px 15px 0px rgba(99, 99, 99, 0.54);
@@ -462,91 +464,85 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
   transition: font-size .5s;
 }
 
-/* line 346, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.textoFinalNosotros .elPQ:hover {
+/* line 353, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .textoFinalNosotros .elPQ:hover {
   cursor: pointer;
   background-color: #E0E9FC;
   font-size: 2.1rem;
 }
 
-/* line 352, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.textoFinalNosotros .elPQ .size--nosotros {
+/* line 359, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .textoFinalNosotros .elPQ .size--nosotros {
   font-size: 80%;
 }
 
-/* line 358, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.pq__nosotros {
+/* line 364, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .pq__nosotros {
   color: #02255B;
 }
 
-/* line 363, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.carrousel {
+/* line 367, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .carrousel {
   justify-content: center;
   width: 340px;
   height: 160px;
 }
 
-/* line 371, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.mapa {
+/* line 373, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .direccion {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 85%;
+}
+
+/* line 378, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .mapa {
   display: flex;
   justify-content: center;
   margin: 5rem;
 }
 
-/* line 376, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.direccion {
-  text-align: center;
-  margin-top: 5rem;
-  /*margin: 2rem;*/
-  font-size: 85%;
-}
-
 /* line 383, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.horarios {
+html body .horarios {
   display: block;
   text-align: center;
 }
 
-/* line 388, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.atencionDia {
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
-}
-
-/* line 393, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.atencion {
+/* line 386, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .horarios .atencion {
   color: #BD0519;
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
-/* line 400, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form {
+/* line 390, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .horarios .atencion .atencionDia {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+/* line 398, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formulario .form {
   background-color: #BD0519;
   width: 60rem;
   margin: 0 auto;
   margin-top: 6rem;
   margin-bottom: 4rem;
-  /*padding: 2rem;*/
   border-radius: 1rem;
+  border: none;
+  background-image: linear-gradient(to right, #BD0519 0%, #02255B 100%);
 }
 
 @media (max-width: 768px) {
-  /* line 400, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-  .form {
+  /* line 398, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+  html body .formulario .form {
     box-sizing: border-box;
     justify-content: center;
   }
 }
 
-/* line 414, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.formulario fieldset {
-  border: none;
-  background-image: linear-gradient(to right, #BD0519 0%, #02255B 100%);
-}
-
-/* line 418, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.form legend {
+/* line 411, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formulario .form .legend {
   padding-top: 8rem;
   text-align: center;
   font-size: 2rem;
@@ -556,28 +552,24 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
   color: #ffffff;
 }
 
-/* line 428, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.txt {
-  margin: 1rem;
-}
-
-/* line 432, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.letraForm {
+/* line 420, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formulario .form .letraForm {
   margin-bottom: 1rem;
   margin-left: 2rem;
   font-size: 2rem;
 }
 
-/* line 436, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.letraForm .label {
+/* line 424, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formulario .form .letraForm .txt {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
+  margin: 1rem;
 }
 
-/* line 444, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.input-text {
+/* line 434, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formulario .form .input-text {
   width: 90%;
   border: none;
   padding: 2rem;
@@ -585,8 +577,8 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
   border-style: inherit;
 }
 
-/* line 451, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.boton {
+/* line 442, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formulario .form .boton {
   background-color: #757575;
   color: #ffffff;
   padding: 1rem 3rem;
@@ -605,17 +597,18 @@ html .contenedor .camisa .formularioProd .formulario__submit:hover {
   margin-bottom: 1.5rem;
 }
 
-/* line 470, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-.boton:hover {
+/* line 459, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body .formulario .form .boton:hover {
   cursor: pointer;
   background-color: #E1CDCD;
 }
 
-/* line 475, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
-footer {
+/* line 466, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+html body footer {
   font-size: 2.1rem;
   text-align: center;
   padding: 4rem;
+  margin-top: 5rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */

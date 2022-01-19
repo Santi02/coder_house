@@ -130,7 +130,7 @@ body {
   font-size: 70%;
   margin-top: 1rem;
 }
-}
+
 
 
 .contenedor{
@@ -179,19 +179,20 @@ body {
      }
 
 .formulario__campo {
+    margin: inherit;
     border: 1rem solid $azulOscuro; 
     background-color: transparent;
     color: black;
     font-size: 2rem;
     padding: 1rem;
     appearance: none;
+
       &:hover{
       cursor: pointer;
       border: 1rem solid $rojo; 
-
       }
     }
-    
+
  .formulario__submit {
     background-color: $gris;
     border: none;
@@ -215,55 +216,23 @@ body {
 
    }
    }
-}
-.cuenta{
-  text-align: center;
-  font-weight: 500;
-  font-size: 50%
-}
+
+
 .creaCuenta{
   background-color: $rojoClaro;
   justify-content: center;
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 2rem;
-}
-.form-control{
-  width: 90%;
-  border: none;
-  font-size: 50%;
-  margin-left: 1rem;
-}
-.form-label{
-  font-size: 1.5rem;
-  margin-left: 2rem;
-}
-.form-text{
-  font-size: 1.5rem;
+    .cuenta{
   text-align: center;
-  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 50%
 }
-.form-check-label{
-  font-size: 1.5rem;
-  margin: 1rem;
 }
-.form-check-input[type=checkbox] {
-  margin-left: 1rem;
-  }
-.form-check-input{
-  padding-left: 0.5rem;
-}
-.form-check{
-  padding-left: 1rem;
-}
-.btn /*btn-primary*/{
-  margin: 2rem;
-  text-decoration: none;
-  text-align: center;
-  font-size: 40%;
-  border: none;
-  padding: 0.8rem;
-}
+
+
+
 .formBT{
   background-color: $azulClaro;
   width: 45rem;
@@ -274,6 +243,45 @@ body {
     @media (max-width: $mq) {
     width: 40rem;
     }
+    .form-label{
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  }
+    .form-control{
+    margin-left: 1rem;
+    width: 95%;
+    border: none;
+    font-size: 50%;
+    margin-left: 1rem;
+}
+.form-text{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.form-check{
+  padding-left: 1rem;
+  }
+    .form-check-input{
+      padding-left: 0.5rem;
+      }
+      .form-check-input[type=checkbox] {
+        margin-left: 1rem;
+        }
+        .form-check-label{
+          font-size: 1.5rem;
+          margin: 1rem;
+}
+}
+
+.btn /*btn-primary*/{
+  margin: 2rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40%;
+  border: none;
+  padding: 0.8rem;
 }
 
 .nosotros{
@@ -334,7 +342,6 @@ margin: 3rem 0;
     
 }
 
-
 .elPQ{
      -webkit-box-shadow: 0px 5px 15px 0px rgba(99, 99, 99, 0.54);
     -moz-box-shadow: 0px 5px 15px 0px rgba(99, 99, 99, 0.54);
@@ -354,68 +361,54 @@ margin: 3rem 0;
 }      
 }
 }
-
 .pq__nosotros{
   color: $azulOscuro;
 }
-
-
 .carrousel{
   justify-content: center;
  width: 340px; 
  height: 160px; 
 }
 
-
-
+.direccion{
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 85%;
+}
 .mapa{
   display: flex;
   justify-content: center;
   margin: 5rem;
 }
-.direccion{
-  text-align: center;
-  margin-top: 5rem;
-  /*margin: 2rem;*/
-  font-size: 85%;
-}
-
 .horarios{
   display: block;
   text-align: center;
-}
-
-.atencionDia{
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
-}
-
-.atencion{
+  .atencion{
   color: $rojo;
   margin-top: 2rem;
   margin-bottom: 4rem;
+  .atencionDia{
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+}
 }
 
-
+.formulario{
 .form{
   background-color: $rojo;
   width: 60rem;
   margin: 0 auto;
   margin-top: 6rem;
   margin-bottom: 4rem;
-  /*padding: 2rem;*/
   border-radius: 1rem;
+  border: none;
+  background-image: linear-gradient(to right,$rojo 0%, $azulOscuro 100%);
     @media (max-width: $mq) {
     box-sizing: border-box;
     justify-content: center;
 }
-}
-
-.formulario fieldset {
-  border: none;
-  background-image: linear-gradient(to right,$rojo 0%, $azulOscuro 100%);
-}
-.form legend {
+.legend {
   padding-top: 8rem;
   text-align: center;
   font-size: 2rem;
@@ -424,22 +417,19 @@ margin: 3rem 0;
   margin-bottom: 2rem;
   color: $blanco;
 }
-
-.txt{
-  margin: 1rem;
-  }
-
 .letraForm{
   margin-bottom: 1rem;
   margin-left: 2rem;
   font-size: 2rem;
-    .label {
+    .txt {
     color: $blanco;
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: block;
+    margin: 1rem;
 }
 }
+
 
 .input-text{
   width: 90%;
@@ -448,6 +438,7 @@ margin: 3rem 0;
   border-radius: 0.5rem;
   border-style: inherit;
 }
+
   .boton{
   background-color: $gris;
   color: $blanco;
@@ -465,16 +456,18 @@ margin: 3rem 0;
   justify-content: flex-end;
   margin-left: 44.8rem;
   margin-bottom: 1.5rem;
-
-
     &:hover {
     cursor: pointer;
     background-color: #E1CDCD;
+}
+}
 }
 }
   footer{
   font-size: 2.1rem;
   text-align: center;
   padding: 4rem;
+  margin-top: 5rem;
 }
-
+}
+}
