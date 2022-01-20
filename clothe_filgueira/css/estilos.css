@@ -536,12 +536,13 @@ html body .formulario .form {
 @media (max-width: 768px) {
   /* line 398, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
   html body .formulario .form {
+    display: block;
     box-sizing: border-box;
     justify-content: center;
   }
 }
 
-/* line 411, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+/* line 412, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
 html body .formulario .form .legend {
   padding-top: 8rem;
   text-align: center;
@@ -552,14 +553,14 @@ html body .formulario .form .legend {
   color: #ffffff;
 }
 
-/* line 420, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+/* line 421, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
 html body .formulario .form .letraForm {
   margin-bottom: 1rem;
   margin-left: 2rem;
   font-size: 2rem;
 }
 
-/* line 424, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+/* line 425, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
 html body .formulario .form .letraForm .txt {
   color: #ffffff;
   font-weight: bold;
@@ -568,7 +569,7 @@ html body .formulario .form .letraForm .txt {
   margin: 1rem;
 }
 
-/* line 434, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+/* line 435, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
 html body .formulario .form .input-text {
   width: 90%;
   border: none;
@@ -577,7 +578,7 @@ html body .formulario .form .input-text {
   border-style: inherit;
 }
 
-/* line 442, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+/* line 443, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
 html body .formulario .form .boton {
   background-color: #757575;
   color: #ffffff;
@@ -597,13 +598,13 @@ html body .formulario .form .boton {
   margin-bottom: 1.5rem;
 }
 
-/* line 459, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+/* line 460, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
 html body .formulario .form .boton:hover {
   cursor: pointer;
   background-color: #E1CDCD;
 }
 
-/* line 466, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
+/* line 467, ../../../../../Documents/coder_house/clothe_filgueira/scss/_main.scss */
 html body footer {
   font-size: 2.1rem;
   text-align: center;
